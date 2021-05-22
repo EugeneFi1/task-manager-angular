@@ -1,3 +1,4 @@
-<app-header></app-header>
-<router-outlet></router-outlet>
-<app-observable></app-observable>
+<app-header [numberOfTasks]="tasksNumber"></app-header>
+<app-tasks (tasksNumber)="plusTask()"></app-tasks>
+<!--<router-outlet></router-outlet>-->
+

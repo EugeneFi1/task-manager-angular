@@ -1,8 +1,21 @@
 <mat-toolbar color="primary">
-  <button mat-button routerLink="/main">Main</button>
-  <button mat-button routerLink="/tasks">Tasks</button>
-  <button mat-raised-button color="primary"
-          [matBadge]="numberOfTasks" matBadgePosition="before" matBadgeColor="accent" class="notification-button">
+  <button mat-button
+          routerLink="/main"
+  >
+    Main
+  </button>
+  <button mat-button
+          routerLink="/tasks"
+  >
+    Tasks
+  </button>
+  <button mat-raised-button
+          color="primary"
+          [matBadge]="numberOfTasks"
+          matBadgePosition="before"
+          matBadgeColor="accent"
+          class="notification-button"
+  >
     My tasks
   </button>
 </mat-toolbar>

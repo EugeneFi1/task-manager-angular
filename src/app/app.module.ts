@@ -9,17 +9,13 @@ import {HttpClientModule} from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {HeaderComponent} from './header/header.component';
-import {ObservableComponent} from './observable/observable.component';
-import {ChildComponent} from './observable/Child/child.component';
 import {TasksModule} from './tasks/tasks.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    ObservableComponent,
-    ChildComponent
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
