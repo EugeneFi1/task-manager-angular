@@ -1,0 +1,10 @@
+<div style="width: 75%; margin-left: auto; margin-right: auto">
+  <mat-selection-list #tasksList>
+    <mat-list-option *ngFor="let task of tasks">
+      {{task}}
+    </mat-list-option>
+  </mat-selection-list>
+</div>
+<p>
+  Options selected: {{tasksList.selectedOptions.selected.length}}
+</p>
