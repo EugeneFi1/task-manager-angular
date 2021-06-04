@@ -6,6 +6,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
 import {ReactiveFormsModule} from '@angular/forms';
 import {CommonModule} from '@angular/common';
+import {ShowTaskComponent} from './show-task/show-task.component';
 
 @NgModule({
   imports: [
@@ -16,11 +17,13 @@ import {CommonModule} from '@angular/common';
     CommonModule
   ],
   exports: [
-    TasksComponent
+    TasksComponent,
+    ShowTaskComponent
   ],
   declarations: [
     TasksComponent,
-    AddTaskComponent
+    AddTaskComponent,
+    ShowTaskComponent
   ]
 })
 export class TasksModule {}
