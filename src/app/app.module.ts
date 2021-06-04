@@ -4,6 +4,7 @@ import { RoutingModule } from './routing.module';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatBadgeModule} from '@angular/material/badge';
+import {MatListModule} from '@angular/material/list';
 import {HttpClientModule} from '@angular/common/http';
 
 import { AppComponent } from './app.component';
@@ -25,6 +26,7 @@ import {TasksModule} from './tasks/tasks.module';
     TasksModule,
     MatButtonModule,
     MatBadgeModule,
+    MatListModule,
     HttpClientModule
   ],
   providers: [],

@@ -7,12 +7,14 @@ import {MatInputModule} from '@angular/material/input';
 import {ReactiveFormsModule} from '@angular/forms';
 import {CommonModule} from '@angular/common';
 import {ShowTaskComponent} from './show-task/show-task.component';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   imports: [
     MatButtonModule,
     MatCardModule,
     MatInputModule,
+    MatListModule,
     ReactiveFormsModule,
     CommonModule
   ],

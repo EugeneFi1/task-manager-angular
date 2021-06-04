@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {TasksService} from '../../services/tasks.service';
 
 @Component({
   selector: 'app-show-task',
@@ -6,9 +7,13 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./show-task.component.less']
 })
 export class ShowTaskComponent implements OnInit{
-  constructor() {
+  public tasks: string[];
+  constructor(private service: TasksService) {
   }
 
   ngOnInit(): void {
+    this.service.loadTasks().subscribe((data: string[]) => {
+      this.tasks = data;
+    });
   }
 }
