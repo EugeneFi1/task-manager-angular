@@ -37,11 +37,11 @@ jobs:
       # - name: Verify formatting
       #   run: deno fmt --check
 
-      - name: Run linter
-        run: deno lint
+      - name: npm install
+        run: npm install
 
-      - name: Cache dependencies
-        run: deno cache deps.ts
-
-      - name: Run tests
-        run: deno test -A --unstable
+#      - name: Cache dependencies
+#        run: deno cache deps.ts
+#
+#      - name: Run tests
+#        run: deno test -A --unstable
