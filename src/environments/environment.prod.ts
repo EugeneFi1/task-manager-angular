@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  url: 'http://localhost:7600/'
+  url: 'https://task-man-be.herokuapp.com/'
 };
