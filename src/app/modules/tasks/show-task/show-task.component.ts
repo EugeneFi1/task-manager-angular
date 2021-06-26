@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {TasksService} from '../../../services/tasks.service';
+import {Observable} from "rxjs";
 
 @Component({
   selector: 'app-show-task',
@@ -8,13 +9,11 @@ import {TasksService} from '../../../services/tasks.service';
 })
 export class ShowTaskComponent implements OnInit{
 
-  public tasks: string[];
+  public tasks: Observable<string[]>;
   constructor(private service: TasksService) {
   }
 
   ngOnInit(): void {
-    this.service.loadTasks().subscribe((data: string[]) => {
-      this.tasks = data;
-    });
+    this.tasks = this.service.loadTasks();
   }
 }
